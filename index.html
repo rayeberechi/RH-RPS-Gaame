@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name="author" content="Faithy Raymond" />
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        <title>Ray Holdings | RPS Game</title>
+
+        <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+        <script src='script.js' defer></script>
+    </head>
+    <body>
+        <div class="welcome-page">
+            <img src="/images/Ray Holdings  Logo.png" alt="RH Logo">
+
+            <h1>Welcome..</h1>
+
+            <p>This is a Rock, Paper, Scissors Game</p>
+
+            <button class="start-btn">I'm Ready!!</button>
+        </div>
+
+       <div class="main-page hidden">
+            <header class="header">
+                <img src="/images/logo.svg" alt="RPS Logo">
+                <div class="score-board">
+                    <h1 class="score-title">Score</h1>
+                    <h2 class="score-count">0</h2>
+                </div>
+            </header>
+
+            <section class="game-options">
+                    <button class="option opt1">
+                        <img src="/images/icon-paper.svg" alt="Paper" class="paper-option">
+                    </button>
+                    
+                    <button class="option opt2">
+                        <img src="/images/icon-rock.svg" alt="Rock" class="rock-option">
+                    </button>
+    
+                    <button class="option opt3">
+                        <img src="/images/icon-scissors.svg" alt="Scissors" class="scissors-option">
+                    </button>
+            </section>
+       </div>
+
+       <section class="result-tab hidden">
+            <div class="result-text">
+                <h2 class="player-choice">You've Chosen</h2>
+                <h2 class="compt-choice">Computer Choose</h2>
+            </div>
+
+            <div class="play-again-btn">
+                <button class="play-again">
+                    Play again
+                </button>
+            </div>
+
+            <div class="outcome">
+                <div class="win">
+                    <i class="fas fa-trophy"></i>
+                    <span>You WiN</span>
+                    <p class="why-win"></p>
+                </div>
+                <div class="loss">
+                    <i class="fas fa-times"></i>
+                    <span>You Lose</span>
+                    <p class="why-lose"></p>
+                </div>
+            </div>
+
+            <div class="quit-btn">
+                <button class="quit">
+                    Quit
+                </button>
+            </div>
+       </section>
+
+       <button class="rules-btn">Rules</button>
+       <div class="rules-display hidden">
+        <header class="rd-header">
+            <h2 class="rd-title">Rules of Play</h2>
+            <button class="close-btn">
+                <img src="/images/icon-close.svg" alt="close-btn">
+            </button>
+        </header>
+        <img src="/images/image-rules.svg" alt="Rules">
+       </div>
+        
+    </body>
+</html>

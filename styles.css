@@ -1,0 +1,229 @@
+:root {
+    --primary-text: #eaeaea;
+    --secondary-text: #2c3e50;
+    --accent-text: #b89d67;
+    --border-color: #566573;
+    --background-light: #1c2833;
+    --background-dark: #0b1a2a;
+    --button-primary: #b89d67;
+    --button-hover: #9a834f;
+    --shadow-light: rgba(0, 0, 0, 0.15);
+    --shadow-med: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: var(--background-light);
+    justify-items: center;
+    font-size: 12px;
+    font-family: "Luckiest Guy", serif;
+    font-style: normal;  
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.welcome-page img {
+    width: 200px;
+    margin: 0;
+}
+
+.welcome-page h1 {
+    font-size: 3rem;
+    letter-spacing: 7px;
+    margin-left: -35px;
+}
+
+.welcome-page p {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 10px 0 10px -33px;
+}
+
+button {
+    font-family: "Luckiest Guy", serif;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: 100;
+    background: var(--button-primary);
+    color: var(--secondary-text);
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn {
+    margin: 10px 0px 40px;
+}
+.start-btn:hover {
+    background: #008000;
+    color: #fff;
+}
+
+.main-page header {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 10px 10px 100px -20px;
+    padding: 10px 20px;
+}
+
+.score-board {
+    background-color: var(--border-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.score-count {
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+.game-options {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.option {
+    width: 150px;
+    height: 150px;
+    border-radius: 40%;
+    background-color: var(--primary-text);
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.option:hover {
+    background-color: #f8b966;
+}
+
+.opt1 {
+    border: 10px solid #f4e;
+}
+.opt2 {  
+    border: 10px solid rgb(242, 250, 6);
+}
+.opt3 {
+    margin-left: 200px;
+    border: 10px solid rgb(12, 143, 71);
+}
+
+.result-tab {
+    margin: 60px;
+}
+
+.result-text {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-text h2 {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.play-again-btn, .quit-btn {
+    margin: 160px 0 0 270px;
+}
+
+.play-again:hover {
+    background-color: #008000;
+    color: #fff;   
+}
+
+.outcome {
+    margin: 40px 0 -100px 320px;
+    font-size: 2rem;
+}
+
+.win, .loss {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-trophy {
+    color: goldenrod;
+    margin-left: 35px;
+}
+
+.fa-times {
+    color: red;
+    margin-left: 35px;
+}
+
+.quit {
+    margin-top: -110px;
+    margin-left: 50px;
+    background-color: var(--border-color);
+    color: var(--accent-text);
+}
+
+.quit:hover {
+    background-color: #ff0000;
+    color: antiquewhite;
+}
+
+.rules-btn {
+    position: absolute;
+    bottom: -1px;
+    right: 1px;
+    margin: -30px 15px 20px 0;
+}
+
+.rules-btn:hover {
+    background-color: var(--button-hover);
+}
+
+.rules-display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--border-color);
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    z-index: 1000;
+}
+
+.rd-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.rd-title {
+    margin-top: 15px;
+    color: var(--background-light);
+    letter-spacing: 4px;
+}
+
+.close-btn {
+    background-color: rgb(206, 202, 202);
+    /* width: 25px; */
+}
+
+.close-btn:hover {
+    background-color: var(--button-hover);
+}
+
+
