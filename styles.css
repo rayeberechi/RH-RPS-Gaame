@@ -155,9 +155,15 @@ button {
     font-size: 2rem;
 }
 
-.win, .loss {
+.win, .loss, .draw {
     display: flex;
     flex-direction: column;
+    margin-left: -60px;
+}
+
+.fa-handshake {
+    color: rgb(167, 121, 121);
+    margin-left: 35px;
 }
 
 .fa-trophy {
