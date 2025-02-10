@@ -51,8 +51,11 @@ rock-paper-scissors/
 4. The result is displayed along with score updates.
 5. Play again or quit anytime!
 
+## Known Issue
+- Display of the user selected option with corresponding image
+
 ## Future Enhancements
-- Fixing up the imaee display of user/computer selected option
+- Fix up the imaee display of user/computer selected option
 - Multiplayer Mode
 - Leaderboard
 - Custom Themes
